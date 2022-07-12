@@ -1,0 +1,8 @@
+block content
+  h1= title
+  a(href="/new")="Post a new message"
+  div 
+    each message in messages
+      span="From " + message.name + ": "
+      span=message.message
+      br
